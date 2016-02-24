@@ -1,0 +1,5 @@
+xs (mobile) < 450px width
+sm (tablet) < 801px width
+md (laptop) < 1201px width
+lg (desktop) < 1701px width
+xl (widescreen) >= 1701px width
