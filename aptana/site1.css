@@ -15,40 +15,37 @@ body {
 	margin: 0 auto;
 	background-color: #FFFFFF;
 	margin-top: -8px;
+}
+
+header {
 	position:relative;
-}
-
-
-
-.overlay {
-	content: " ";
-	z-index: 10;
-	display: block;
-	position: absolute;
-	width: 100%;
-	top: 0;
-	left: 0;
-	right: 0;
-	background: rgba(355, 355, 355, 0.5);	
-}
-
-nav {
-	background-color: #FFE4E1; 
 }
 
 nav ul {
 	margin-top: -2px;
 	background-color: #FFE4E1; 
+	height: 100%;
 }
 
 nav ul,
 footer ul {
 	list-style-type: none;
 	text-align: center;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
 }
 
-nav a {
-	background-color:gray;
+.activeNavLink a {
+	background-color: pink;
+}
+
+nav a:hover {
+	background-color: white;
+}
+
+nav a:active {
+	background-color: pink;
 }
 
 section > * {
@@ -59,6 +56,11 @@ section > p:last-child {
 	padding-bottom: 50px;
 }
 
+nav a,
+footer a {
+	text-decoration: none;
+	color: white;
+}
 footer {
 	position: fixed;
 	bottom: -14px;
@@ -83,17 +85,14 @@ footer ul {
 		height: 75px;
 	}
 	
-	nav ul {
-		text-align: center;
-	}
-	
 	nav li {
 		margin-top: 30px;
 		display: inline-block;
-		width: 90px;
+		text-align: center;
 	}
 	
 	a {
+		height: 100%;
 		padding: 20px;
 	}
 
