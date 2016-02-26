@@ -12,31 +12,104 @@
     			<img src="file:///C:/Users/Bianca/My%20Projects/bianca-morris.com/aptana/img/banner.png" />
     		</header>
     		<nav>
-    			<ul>
-    				<li class="activeNavLink"><a href="#">Home</a></li>
-    				<li><a href="#">About</a></li>
-    				<li><a href="#">CV</a></li>
-    				<li><a href="#">Projects</a></li>
-    				<li><a href="#">Blog</a></li>
-    				<li><a href="#">Contact</a></li>
+    			<ul id="dropMenu">
+    				<li class="menuButton" id="menuLink">Menu</li>
+    			</ul>
+    			<ul id="navMenu">
+    				<li class="activeNavLink navLink" id="homeLink"><a href="#">Home</a></li>
+    				<li class="navLink" id="aboutLink"><a href="#">About</a></li>
+    				<li class="navLink" id="cvLink"><a href="#">CV</a></li>
+    				<li class="navLink" id="projectsLink"><a href="#">Projects</a></li>
+    				<li class="navLink" id="blogLink"><a href="#">Blog</a></li>
+    				<li class="navLink" id="contactLink"><a href="#">Contact</a></li>
     			</ul>
     		</nav>
-    		<section>
-    			<h1>New Web Project Page</h1>
+    		<section id="welcomeMessage">
+    			<h1>Welcome!</h1>
     			<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eu elit massa. Morbi euismod nec urna at porttitor. Duis ullamcorper accumsan convallis. Mauris fermentum dolor rhoncus, finibus velit eu, venenatis orci. Duis vel mi justo. Nullam ut pellentesque nulla. Duis egestas nisl eget dui suscipit auctor. Maecenas sed nunc et eros mattis tempus. In nec dapibus arcu. Vestibulum condimentum fringilla nunc, nec iaculis justo interdum ut. Mauris ac interdum ante. Vivamus elit odio, rutrum nec turpis vitae, pharetra egestas tortor. Aenean ut tristique nulla. Duis nisi lacus, lobortis nec pharetra bibendum, sodales et augue. Pellentesque arcu lectus, rhoncus in egestas eget, sollicitudin in lacus. Sed augue ipsum, maximus non elit id, dignissim suscipit est.</p>
-				<p>Integer eget iaculis elit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla id nunc arcu. Suspendisse malesuada nisi et dapibus rutrum. Nulla accumsan ligula in enim facilisis varius. Duis eu magna eget felis malesuada vehicula in mollis mauris. Pellentesque eget enim tristique, commodo felis at, suscipit sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a ligula quis orci aliquam molestie. Phasellus et mi eu risus mollis iaculis. Nunc facilisis ex eu suscipit tempor. Ut sodales nibh quis diam pharetra, id sodales magna efficitur. In vel feugiat sem. Ut porta quis nulla non convallis.</p>
+			</section>
+			<section id="recentProjects">
+				<h1>Recent Projects</h1>
+				<div class="projectContainer">
+					<div class="projectWrap">
+						<h3>Audiocracy</h3>
+						<img class="projectPics" src="img/audiocracyThumb.png" />
+					</div>
+					<div class="projectWrap">
+						<h3>GenkiFlash</h3>
+						<img class="projectPics" src="img/genkiflashThumb.png" />
+					</div>
+					<div class="projectWrap">
+						<h3>Ryouri</h3>
+						<img class="projectPics" src="img/ryouriThumb.png" />
+					</div>
+				</div>
+			</section>
+			<section id="Updates">
+				<h1>Site Updates:</h1>
+    			<div id="updateBox">
+    				<h2>2/26/2016</h2>
+    				<p>Finally put together a working layout! It's not ideal, and I actually want to make some major changes, but it'll do for now.</p>
+ 					<h2>2/26/2016</h2>
+    				<p>Finally put together a working layout! It's not ideal, and I actually want to make some major changes, but it'll do for now.</p>
+    				<h2>2/26/2016</h2>
+    				<p>Finally put together a working layout! It's not ideal, and I actually want to make some major changes, but it'll do for now.</p>
+    				<h2>2/26/2016</h2>
+    				<p>Finally put together a working layout! It's not ideal, and I actually want to make some major changes, but it'll do for now.</p> 		
+    			</div>
     		</section>
     	</div>
     		<footer>
     			<ul>
-    				<li>Link 1</li>
-    				<li>Link 2</li>
+    				<li>&copy; 2016 Bianca Allyn Morris</li>
     			</ul>
     			<ul>
-    				<li>Link 1</li>
-    				<li>Link 2</li>
-    				<li>Link 3</li>
+    				<li>
+    					<a href="mailto:bmorris@wellesley.edu">
+    					<img src="img/email.svg" alt="email" />
+    					</a>
+    				</li>
+    				<li>
+    					<a href="https://www.youtube.com/channel/UCyhWTIAHinK5SeM_6izJcRw">
+    					<img src="img/youtube.svg" alt="youtube"/>
+    					</a>
+    				</li>
+    				<li>
+    					<a href="https://www.linkedin.com/in/bianca-morris-81bb6072">
+    					<img src="img/linkedin.svg" alt="linkedin"/>
+    					</a>
+    				</li>
     			</ul>
     		</footer>
+    <script type="text/javascript">
+
+    	//Toggles dropdown menu on mobile devices
+    	document.getElementById("menuLink").onclick=function() {
+    		if (document.getElementById("navMenu").style.display=="none") {
+    			document.getElementById("navMenu").style.display="block";
+    		} else {
+    		document.getElementById("navMenu").style.display="none";
+    		};
+    	};
+    	/*Hack-n-smash fix for a bug where the menu disappears for large screens
+    	if menu button is pressed on small screen and then window is resized. Code taken
+    	from http://www.sitepoint.com/javascript-media-queries/ */
+		if (matchMedia) { //Watches to see if the window size changes
+ 			var mq = window.matchMedia("(min-width: 826px)");
+  			mq.addListener(WidthChange);
+  			WidthChange(mq);
+		};
+		// When the window size changes, it checks to see...
+		function WidthChange(mq) {
+			//Is it the size of the desktop/laptop styles?
+  			if (mq.matches) {
+  				//ensures the menu is displayed
+	 		    document.getElementById("navMenu").style.display="block";
+  			}
+  			else {
+  				document.getElementById("navMenu").style.display="none";
+  			};
+		};
+    </script>
     </body>
 </html>

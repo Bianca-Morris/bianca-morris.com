@@ -15,6 +15,7 @@ body {
 	margin: 0 auto;
 	background-color: #FFFFFF;
 	margin-top: -8px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 header {
@@ -42,18 +43,66 @@ footer ul {
 
 nav a:hover {
 	background-color: white;
+	color: #8FBC8F;
 }
 
 nav a:active {
 	background-color: pink;
 }
 
+section {
+	width: 85%;
+	margin: 0 auto;
+}
 section > * {
+	text-align: justify;
 	padding: 0px 20px;
 }
 
-section > p:last-child {
-	padding-bottom: 50px;
+.projectContainer {
+	width:100%;
+}
+
+.projectWrap {
+	width:200px;
+	padding: 0 5px 0 0;
+	display:inline-block;
+}
+
+.projectWrap h3{
+	text-align:center;
+}
+
+#recentProjects img{
+	border: 4px #8FBC8F solid;
+}
+
+#Updates {
+	padding-bottom: 55px;
+}
+
+#updateBox {
+	height: 250px;
+	margin: 0 auto;
+	width: 85%;
+	border: #8FBC8F 3px dashed;
+	padding: 20px;
+	overflow: auto;
+}
+
+.projectPics {   
+   -webkit-filter: grayscale(100%);
+   -moz-filter: grayscale(100%);
+   -ms-filter: grayscale(100%);
+   filter: grayscale(100%);
+   filter: gray;
+}
+
+.projectPics:hover {
+	-webkit-filter: none;
+    -moz-filter: none;
+    -ms-filter: none;
+    filter: none;
 }
 
 nav a,
@@ -66,11 +115,16 @@ footer {
 	bottom: -14px;
 	left: 0px;
 	width: 100%;
+	padding-top: 3px;
 }
 
 footer ul {
 	background-color: gray;
 }
+
+footer img {
+		width: 15px;
+	}
 
 /* Desktop/Laptop size */
 @media screen and (min-width:826px) {
@@ -78,6 +132,10 @@ footer ul {
 		margin: 0 auto;
 		margin-top: -8px;
 		width: 800px;
+	}
+	
+	#dropMenu {
+		display:none;
 	}
 	
 	nav {
@@ -118,7 +176,7 @@ footer ul {
 	header img {
 		width: 100%;
 	}
-
+	
 	nav { 
 		width: 100%;
 	}
@@ -139,6 +197,11 @@ footer ul {
 		display: block;
 	}
 	
+	#menuLink {
+		padding: 10px;
+		background-color:white;
+		color: #808080;
+	}
 	footer {
 		height: 50px;
 	}
