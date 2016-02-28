@@ -1,0 +1,86 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link rel="stylesheet" type="text/css" href="template.css">
+        <title>New Web Project</title>
+    </head>
+    <body>
+    	<div class="wrapper">
+    		<header>
+    			<img src="file:///C:/Users/Bianca/My%20Projects/bianca-morris.com/aptana/img/banner.png" />
+    		</header>
+    		<nav>
+    			<ul id="dropMenu">
+    				<li class="menuButton" id="menuLink">Menu</li>
+    			</ul>
+    			<ul id="navMenu">
+    				<li class="activeNavLink navLink" id="homeLink"><a href="#">Home</a></li>
+    				<li class="navLink" id="aboutLink"><a href="#">About</a></li>
+    				<li class="navLink" id="cvLink"><a href="#">CV</a></li>
+    				<li class="navLink" id="projectsLink"><a href="#">Projects</a></li>
+    				<li class="navLink" id="blogLink"><a href="#">Blog</a></li>
+    				<li class="navLink" id="contactLink"><a href="#">Contact</a></li>
+    			</ul>
+    		</nav>
+    		<section>
+				<h1>Header 1 Here!</h1>
+				<p>WHY WONT THIS STRETCH DAMNIT</p>
+				<br><br><br><br><br><br><br><br><br><br>
+			</section>
+    	</div>
+    		<footer>
+    			<ul>
+    				<li>&copy; 2016 Bianca Allyn Morris</li>
+    			</ul>
+    			<ul>
+    				<li>
+    					<a href="mailto:bmorris@wellesley.edu">
+    					<img src="img/email.svg" alt="email" />
+    					</a>
+    				</li>
+    				<li>
+    					<a href="https://www.youtube.com/channel/UCyhWTIAHinK5SeM_6izJcRw">
+    					<img src="img/youtube.svg" alt="youtube"/>
+    					</a>
+    				</li>
+    				<li>
+    					<a href="https://www.linkedin.com/in/bianca-morris-81bb6072">
+    					<img src="img/linkedin.svg" alt="linkedin"/>
+    					</a>
+    				</li>
+    			</ul>
+    		</footer>
+    <script type="text/javascript">
+
+    	//Toggles dropdown menu on mobile devices
+    	document.getElementById("menuLink").onclick=function() {
+    		if (document.getElementById("navMenu").style.display=="none") {
+    			document.getElementById("navMenu").style.display="block";
+    		} else {
+    		document.getElementById("navMenu").style.display="none";
+    		};
+    	};
+    	/*Hack-n-smash fix for a bug where the menu disappears for large screens
+    	if menu button is pressed on small screen and then window is resized. Code taken
+    	from http://www.sitepoint.com/javascript-media-queries/ */
+		if (matchMedia) { //Watches to see if the window size changes
+ 			var mq = window.matchMedia("(min-width: 826px)");
+  			mq.addListener(WidthChange);
+  			WidthChange(mq);
+		};
+		// When the window size changes, it checks to see...
+		function WidthChange(mq) {
+			//Is it the size of the desktop/laptop styles?
+  			if (mq.matches) {
+  				//ensures the menu is displayed
+	 		    document.getElementById("navMenu").style.display="block";
+  			}
+  			else {
+  				document.getElementById("navMenu").style.display="none";
+  			};
+		};
+    </script>
+    </body>
+</html>

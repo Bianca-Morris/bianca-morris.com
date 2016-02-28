@@ -1,0 +1,12 @@
+section {
+	padding-bottom: 50px;
+}
+
+section ul {
+	list-style-position: inside;
+}
+
+section p,
+section h3 {
+	text-align:center;
+}

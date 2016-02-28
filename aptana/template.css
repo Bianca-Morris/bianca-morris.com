@@ -1,0 +1,153 @@
+/*Common settings for all sizes*/
+html {
+	height: 100%;
+}
+body {
+	background: #8FBC8F;
+   	background: -webkit-linear-gradient(#8FBC8F, #FFFAF0);
+   	background: -o-linear-gradient(#8FBC8F, #FFFAF0);
+   	background: -moz-linear-gradient(#8FBC8F, #FFFAF0);
+	background: linear-gradient(#8FBC8F, #FFFAF0); 
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	}
+*{
+	font-family: sans-serif;
+}
+.wrapper {
+	margin: 0 auto;
+	background-color: #FFFFFF;
+	margin-top: -8px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	min-height: 100%;
+	overflow:hidden;
+}
+header {
+	position:relative;
+}
+nav ul {
+	margin-top: -2px;
+	background-color: #FFE4E1; 
+	height: 100%;
+}
+nav ul,
+footer ul {
+	list-style-type: none;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+.activeNavLink a {
+	background-color: pink;
+}
+nav a:hover {
+	background-color: white;
+	color: #8FBC8F;
+}
+nav a:active {
+	background-color: pink;
+}
+section {
+	background-color: #FFFFFF;
+	width: 85%;
+	height: 100%;
+	margin: 0 auto;
+}
+section > * {
+	text-align: justify;
+	padding: 0px 20px;
+}
+nav a,
+footer a {
+	text-decoration: none;
+	color: white;
+}
+footer {
+	position: fixed;
+	bottom: -14px;
+	left: 0px;
+	width: 100%;
+	padding-top: 3px;
+}
+footer ul {
+	background-color: gray;
+}
+footer img {
+		width: 15px;
+	}
+
+/* Desktop/Laptop size */
+@media screen and (min-width:826px) {
+	.wrapper {
+		margin: 0 auto;
+		margin-top: -8px;
+		width: 800px;
+	}
+	#dropMenu {
+		display:none;
+	}
+	nav {
+		width: 800px;
+		height: 75px;
+	}
+		nav li {
+		margin-top: 30px;
+		display: inline-block;
+		text-align: center;
+	}
+	a {
+		height: 100%;
+		padding: 20px;
+	}
+	footer {
+		height: 50px;
+	}
+	footer ul {
+		margin: 0;
+	}
+	footer li {
+		display: inline;
+	}
+}
+
+/* Mobile & Tablet size */
+@media screen and (max-width:825px){
+	.wrapper {
+		width: 90%;
+	}	
+	header img {
+		width: 100%;
+	}
+	nav { 
+		width: 100%;
+	}
+	nav ul {
+		margin: 0;
+		padding: 10px 0px;
+	}
+	nav li {
+		margin-bottom: 5px;
+	}
+	nav a {
+		padding: 10px 0;
+		width: 80%;
+		margin: 0px auto;
+		display: block;
+	}
+	#menuLink {
+		padding: 10px;
+		background-color:white;
+		color: #808080;
+	}
+	footer {
+		height: 50px;
+	}
+	footer ul {
+		margin: 0;
+	}
+	footer li {
+		display: inline;
+	}
+}

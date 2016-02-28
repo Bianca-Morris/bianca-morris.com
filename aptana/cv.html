@@ -1,0 +1,134 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link rel="stylesheet" type="text/css" href="template.css">
+        <link rel="stylesheet" type="text/css" href="cv.css">
+        <title>Bianca-Morris.com - CV</title>
+    </head>
+    <body>
+    	<div class="wrapper">
+    		<header>
+    			<img src="file:///C:/Users/Bianca/My%20Projects/bianca-morris.com/aptana/img/banner.png" />
+    		</header>
+    		<nav>
+    			<ul id="dropMenu">
+    				<li class="menuButton" id="menuLink">Menu</li>
+    			</ul>
+    			<ul id="navMenu">
+    				<li class="navLink" id="homeLink"><a href="index.html">Home</a></li>
+    				<li class="navLink" id="aboutLink"><a href="about.html">About</a></li>
+    				<li class="activeNavLink navLink" id="cvLink"><a href="#">CV</a></li>
+    				<li class="navLink" id="projectsLink"><a href="projects.html">Projects</a></li>
+    				<li class="navLink" id="blogLink"><a href="blog.html">Blog</a></li>
+    				<li class="navLink" id="contactLink"><a href="contact.html">Contact</a></li>
+    			</ul>
+    		</nav>
+    		<section>
+				<h1>CV/Resume</h1>
+				<h3>Education</h3>
+				<ul>
+					<li><strong>Wellesley College (2013-2017)</strong></li>
+					<ul>
+						<li>Major: Cinema and Media Studies</li>
+						<li>Major GPA: 3.72</li>
+					</ul>
+					<li><strong>Massachusetts Institute of Technology (Spring 2016)</strong></li>
+					<ul>
+						<li>Relevant Coursework: CMS. 338: Innovation in Documentary</li>
+						<li>GPA: Pending</li>
+					</ul>
+					<li><strong>La Escuela Prepatoria de Barcelona (Summer 2009)</strong></li>
+					<ul>
+						<li>Major: Barcelona and the Arts</li>
+						<li>Minor: Studio Art</li>
+					</ul>
+				</ul>
+				<h3>Work Experience</h3>
+					<dt><strong>Boston Digital Productions (2016 - c.)</strong></dt>
+						<dd><em><strong>Video Production Intern</strong></em></dd>
+						<dd>Aided with the production of the (currently unreleased) documentary film, <em>The Strange Name Movie</em>, as well as with the development of web-based marketing strategies.</dd>
+					<dt><strong>Re:Route/Wellesley Initiative for Sustainable Computing (2014-2015)</strong></dt>
+						<dd><em><strong>Student Technician</strong></em></dd>
+						<dd>Refurbished Mac and PC computers, organized donor requests and pick-ups, and maintained the Re:Route website.</dd>
+					<dt><strong>University of Alabama at Birmingham (Summer 2012)</strong></dt>
+						<dd><em><strong>Pharmacology and Toxicology Research Intern</strong></em></dd>
+						<dd>Researched the effects of mutations on the N-terminal region of assorted DNA repair enzymes as a part of the van Waardenburg Lab.</dd>	
+				<h3>Other Experience</h3>
+					<dt><strong>Wellesley College Television (2013 - c.)</strong></dt>
+						<dd><em><strong>Cinematographer and Webmistress</strong></em></dd>
+						<dd>Worked tech ops on over a dozen segnments for the campus satire news show. Maintained WCTV website.</dd>
+					<dt><strong>SeedKit: Science Education Equity Development Kit (2015 - c.)</strong></dt>
+						<dd><em><strong>Communications Specialist</strong></em></dd>
+						<dd>Maintained website and produced blog posts. Created detailed illustrations and protocols for experiments in Adobe Indesign and Illustrator.</dd>
+					<dt><strong>Nourish International Wellesley (2013 - c.)</strong></dt>
+						<dd><em><strong>Communications Director</strong></em></dd>
+						<dd>Organized service trip to Tamil Nadu, IN. Planned executive board and committee meetings, produced minutes, and kept all branches of the organization in contact via email, Asana, and the Google Web Suite. Additionally, produced print advertisements for ventures and designed HTML/CSS e-newsletter for donors.</dd>
+					<dt><strong>PBS Student Reporting Labs (2011-2012)</strong></dt>
+						<dd><em><strong>Student Contributor</strong></em></dd>
+						<dd>Wrote and directed student-oriented local news segments, one of which placed 6th in PBS' 2012 National "March Media Madness" video competition.</dd>
+				<h3>Skills</h3>
+				<ul>
+					<li><strong>Film Editing:</strong> Final Cut Pro [7 &amp; X], Adobe Premiere</li>
+					<li><strong>Videography &amp; Photography:</strong> Canon XA10/XA20, Canon Rebel T2i DSLR</li>
+					<li><strong>Sound Mixing:</strong> Logic Studio, Garage Band, Audacity</li>
+					<li><strong>Programming:</strong> HTML, CSS, Javascript, and Python</li>
+					<li><strong>Productivity Tools:</strong> Github, Microsoft Office, Asana, Google Suite, etc.</li>
+				</ul>
+			</section>
+    	</div>
+    		<footer>
+    			<ul>
+    				<li>&copy; 2016 Bianca Allyn Morris</li>
+    			</ul>
+    			<ul>
+    				<li>
+    					<a href="mailto:bmorris@wellesley.edu">
+    					<img src="img/email.svg" alt="email" />
+    					</a>
+    				</li>
+    				<li>
+    					<a href="https://www.youtube.com/channel/UCyhWTIAHinK5SeM_6izJcRw">
+    					<img src="img/youtube.svg" alt="youtube"/>
+    					</a>
+    				</li>
+    				<li>
+    					<a href="https://www.linkedin.com/in/bianca-morris-81bb6072">
+    					<img src="img/linkedin.svg" alt="linkedin"/>
+    					</a>
+    				</li>
+    			</ul>
+    		</footer>
+    <script type="text/javascript">
+
+    	//Toggles dropdown menu on mobile devices
+    	document.getElementById("menuLink").onclick=function() {
+    		if (document.getElementById("navMenu").style.display=="none") {
+    			document.getElementById("navMenu").style.display="block";
+    		} else {
+    		document.getElementById("navMenu").style.display="none";
+    		};
+    	};
+    	/*Hack-n-smash fix for a bug where the menu disappears for large screens
+    	if menu button is pressed on small screen and then window is resized. Code taken
+    	from http://www.sitepoint.com/javascript-media-queries/ */
+		if (matchMedia) { //Watches to see if the window size changes
+ 			var mq = window.matchMedia("(min-width: 826px)");
+  			mq.addListener(WidthChange);
+  			WidthChange(mq);
+		};
+		// When the window size changes, it checks to see...
+		function WidthChange(mq) {
+			//Is it the size of the desktop/laptop styles?
+  			if (mq.matches) {
+  				//ensures the menu is displayed
+	 		    document.getElementById("navMenu").style.display="block";
+  			}
+  			else {
+  				document.getElementById("navMenu").style.display="none";
+  			};
+		};
+    </script>
+    </body>
+</html>

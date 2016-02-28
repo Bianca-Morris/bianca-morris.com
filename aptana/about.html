@@ -3,8 +3,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <link rel="stylesheet" type="text/css" href="indexPage.css">
-        <title>New Web Project</title>
+        <link rel="stylesheet" type="text/css" href="template.css">
+        <link rel="stylesheet" type="text/css" href="about.css">
+        <title>Bianca-Morris.com - About Me</title>
     </head>
     <body>
     	<div class="wrapper">
@@ -16,48 +17,40 @@
     				<li class="menuButton" id="menuLink">Menu</li>
     			</ul>
     			<ul id="navMenu">
-    				<li class="activeNavLink navLink" id="homeLink"><a href="#">Home</a></li>
-    				<li class="navLink" id="aboutLink"><a href="about.html">About</a></li>
+    				<li class="navLink" id="homeLink"><a href="index.html">Home</a></li>
+    				<li class="activeNavLink navLink" id="aboutLink"><a href="#">About</a></li>
     				<li class="navLink" id="cvLink"><a href="cv.html">CV</a></li>
     				<li class="navLink" id="projectsLink"><a href="projects.html">Projects</a></li>
     				<li class="navLink" id="blogLink"><a href="blog.html">Blog</a></li>
     				<li class="navLink" id="contactLink"><a href="contact.html">Contact</a></li>
     			</ul>
     		</nav>
-    		<section id="welcomeMessage">
-    			<h1>Welcome!</h1>
-    			<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eu elit massa. Morbi euismod nec urna at porttitor. Duis ullamcorper accumsan convallis. Mauris fermentum dolor rhoncus, finibus velit eu, venenatis orci. Duis vel mi justo. Nullam ut pellentesque nulla. Duis egestas nisl eget dui suscipit auctor. Maecenas sed nunc et eros mattis tempus. In nec dapibus arcu. Vestibulum condimentum fringilla nunc, nec iaculis justo interdum ut. Mauris ac interdum ante. Vivamus elit odio, rutrum nec turpis vitae, pharetra egestas tortor. Aenean ut tristique nulla. Duis nisi lacus, lobortis nec pharetra bibendum, sodales et augue. Pellentesque arcu lectus, rhoncus in egestas eget, sollicitudin in lacus. Sed augue ipsum, maximus non elit id, dignissim suscipit est.</p>
+    		<section>
+				<h1>About Me</h1>
+				<img src="img/pic.jpg">
+				<h3>Demographics:</h3>
+				<ul>
+					<li><strong>Name:</strong> Bianca Allyn Morris</li>
+					<li><strong>Age:</strong> 22</li>
+					<li><strong>Based In:</strong> West Palm Beach, FL</li>
+					<li><strong>Hometown:</strong> Atlanta, GA</li>
+				</ul>
+				<h3>Education:</h3>
+				<ul>
+					<li><strong>University/College:</strong> Wellesley College</li>
+					<li><strong>Major:</strong> Cinema and Media Studies</li>
+					<li><strong>Class Year:</strong> Junior</li>	
+				</ul>
+				<br>
+				<h3>Brief Bio:</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+				<h3>Fun Facts:</h3>
+				<ul>
+					<li>I started creating websites in middle school, using Piczo's HTML/CSS-based skins.</li>
+					<li>I've been to four continents (Europe, NA, SA/LA, Asia).</li>
+					<li>I have put 800 hours into Left 4 Dead 2, and 500 hours into Team Fortress 2.</li>
+				</ul>
 			</section>
-			<section id="recentProjects">
-				<h1>Recent Projects</h1>
-				<div class="projectContainer">
-					<div class="projectWrap">
-						<h3>Audiocracy</h3>
-						<img class="projectPics" src="img/audiocracyThumb.png" />
-					</div>
-					<div class="projectWrap">
-						<h3>GenkiFlash</h3>
-						<img class="projectPics" src="img/genkiflashThumb.png" />
-					</div>
-					<div class="projectWrap">
-						<h3>Ryouri</h3>
-						<img class="projectPics" src="img/ryouriThumb.png" />
-					</div>
-				</div>
-			</section>
-			<section id="Updates">
-				<h1>Site Updates:</h1>
-    			<div id="updateBox">
-    				<h2>2/26/2016</h2>
-    				<p>Finally put together a working layout! It's not ideal, and I actually want to make some major changes, but it'll do for now.</p>
- 					<h2>2/26/2016</h2>
-    				<p>Finally put together a working layout! It's not ideal, and I actually want to make some major changes, but it'll do for now.</p>
-    				<h2>2/26/2016</h2>
-    				<p>Finally put together a working layout! It's not ideal, and I actually want to make some major changes, but it'll do for now.</p>
-    				<h2>2/26/2016</h2>
-    				<p>Finally put together a working layout! It's not ideal, and I actually want to make some major changes, but it'll do for now.</p> 		
-    			</div>
-    		</section>
     	</div>
     		<footer>
     			<ul>
@@ -82,7 +75,6 @@
     			</ul>
     		</footer>
     <script type="text/javascript">
-
     	//Toggles dropdown menu on mobile devices
     	document.getElementById("menuLink").onclick=function() {
     		if (document.getElementById("navMenu").style.display=="none") {

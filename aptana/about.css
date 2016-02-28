@@ -1,0 +1,12 @@
+section {
+	padding-bottom: 50px;
+}
+
+section img {
+	height: 250px;
+	float: left;
+}
+
+section ul {
+	list-style-position: inside;
+}
