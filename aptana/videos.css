@@ -1,0 +1,23 @@
+#videoContainer {
+	width: 100%;
+	background-color: #8FBC8F;
+}
+
+#videoPane {
+	background-color: white;
+	width: 320px;
+	margin: 0;
+}
+
+#navPane {
+	position:relative;
+	background-color: pink;
+	top: -250px;
+	left: 450px;
+	width: 200px;
+}
+
+video {
+	padding: 0;
+	margin: 0;
+}
