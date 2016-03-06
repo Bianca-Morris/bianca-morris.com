@@ -4,9 +4,62 @@ section {
 
 section img {
 	height: 250px;
+	width: 176px;
 	float: left;
+	padding: 0px;
+	border: 2px solid #73264D; 
+	-moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
 }
 
 section ul {
 	list-style-position: inside;
+	line-height: 1px;
+}
+
+/* Desktop/Laptop size */
+@media screen and (min-width:826px) 
+{
+	#fastFacts {
+		width: 436px;
+		height: 250px;
+		background-color: #73264D;
+		float:right;
+		border: 2px solid #73264D; 
+		color: white;
+	}
+	section h3:first-of-type {
+ 		margin: 290px 0px 0px 0px;
+ 	}
+	section img {
+		margin: 0px 0px 0px 20px;
+		border-radius: 0 100px 100px 0;
+	}
+	#fastFacts h4{
+		color: #FFFFFF;
+	}
+	#demo {
+		float:left;
+		width: 200px;
+	}
+	#ed {
+		float:right;
+		width: 200px;
+	}
+}
+	
+/* Mobile & Tablet size */
+@media screen and (max-width:825px)
+{
+	#fastFacts{
+		display:none;
+	}
+	section img {
+		margin: 0px 20px 0px 20px;
+		
+	}
 }

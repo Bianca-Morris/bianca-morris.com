@@ -9,7 +9,7 @@
     <body>
     	<div class="wrapper">
     		<header>
-    			<img src="file:///C:/Users/Bianca/My%20Projects/bianca-morris.com/aptana/img/banner.png" />
+    			<img src="img/banner.png" />
     		</header>
     		<nav>
     			<ul id="dropMenu">
@@ -20,7 +20,7 @@
     				<li class="navLink" id="aboutLink"><a href="#">About</a></li>
     				<li class="navLink" id="cvLink"><a href="#">CV</a></li>
     				<li class="navLink" id="projectsLink"><a href="#">Projects</a></li>
-    				<li class="navLink" id="blogLink"><a href="#">Blog</a></li>
+    				<!--<li class="navLink" id="blogLink"><a href="#">Blog</a></li>-->
     				<li class="navLink" id="contactLink"><a href="#">Contact</a></li>
     			</ul>
     		</nav>
@@ -54,35 +54,6 @@
     				</li>
     			</ul>
     		</footer>
-    <script type="text/javascript">
-
-    	//Toggles dropdown menu on mobile devices
-    	document.getElementById("menuLink").onclick=function() {
-    		if (document.getElementById("navMenu").style.display=="none") {
-    			document.getElementById("navMenu").style.display="block";
-    		} else {
-    		document.getElementById("navMenu").style.display="none";
-    		};
-    	};
-    	/*Hack-n-smash fix for a bug where the menu disappears for large screens
-    	if menu button is pressed on small screen and then window is resized. Code taken
-    	from http://www.sitepoint.com/javascript-media-queries/ */
-		if (matchMedia) { //Watches to see if the window size changes
- 			var mq = window.matchMedia("(min-width: 826px)");
-  			mq.addListener(WidthChange);
-  			WidthChange(mq);
-		};
-		// When the window size changes, it checks to see...
-		function WidthChange(mq) {
-			//Is it the size of the desktop/laptop styles?
-  			if (mq.matches) {
-  				//ensures the menu is displayed
-	 		    document.getElementById("navMenu").style.display="block";
-  			}
-  			else {
-  				document.getElementById("navMenu").style.display="none";
-  			};
-		};
-    </script>
+		<script src="template.js"></script>
     </body>
 </html>

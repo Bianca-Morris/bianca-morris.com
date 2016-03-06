@@ -20,14 +20,92 @@
     				<li class="navLink" id="homeLink"><a href="index.html">Home</a></li>
     				<li class="navLink" id="aboutLink"><a href="about.html">About</a></li>
     				<li class="navLink" id="cvLink"><a href="cv.html">CV</a></li>
-    				<li class="activeNavLink nnavLink" id="projectsLink"><a href="#">Projects</a></li>
-    				<li class="navLink" id="blogLink"><a href="blog.html">Blog</a></li>
+    				<li class="activeNavLink navLink" id="projectsLink"><a href="#">Projects</a></li>
+    				<!--<li class="navLink" id="blogLink"><a href="blog.html">Blog</a></li>-->
     				<li class="navLink" id="contactLink"><a href="contact.html">Contact</a></li>
     			</ul>
     		</nav>
     		<section>
-				<h1>Header 1 Here!</h1>
-				<p>WHY WONT THIS STRETCH DAMNIT</p>
+				<h1>Projects</h1>
+				<p>To accompany my theory-based Cinema and Media Studies major, I produce media in a variety
+					of forms including: photography, videos/film, web designs, software, and digital art. Most
+					of these skills are self-taught, aside from python programming and video production, which
+					I've taken college courses in. Check out some of my work below.</p>
+				<hr>
+				<h3>Web Design/Development</h3>
+					<div class="webDesign">
+						<h5>Audiocracy</h5>
+						<img src="img/audiocracyThumb.png">
+						<p>
+							<span class="bold">Description</span>: Democratize your party playlists; have your guests contribute to one unified playlist; no DJ required.
+							<br><br><span class="bold">Status</span>: On hiatus
+							<br><span class="bold">Skills used</span>: HTML, CSS, Bootstrap, some Javascript
+							<br><span class="bold">Partners?</span>: Yes, Galen Chuang and Julia Han
+						</p>
+					</div>
+					<div class="webDesign">
+						<h5>Ryouri Restaurant Website</h5>
+						<img src="img/ryouriThumb.png">
+						<p>
+							<span class="bold">Description</span>: Engage with Japanese culture and cuisine at Ryouri Restaurant.
+							<br>
+							<br><span class="bold">Status</span>: On hiatus (until I learn PHP)
+							<br><br><span class="bold">Skills used</span>: HTML, CSS, Bootstrap, some Javascript
+							<br><br><span class="bold">Partners?</span>: No
+						</p>
+					</div>
+					<div class="webDesign">
+						<h5>Nourish Int'l E-Newsletter</h5>
+						<img src="img/nourishThumb.png">
+						<p>
+							<span class="bold">Description</span>: A thank you e-newsletter for people who donated to Nourish during the 2015 Giving Challenge. Optimized for gmail.
+							<br><br><span class="bold">Status</span>: Complete
+							<br><br><span class="bold">Skills used</span>: HTML table layout, inline CSS
+							<br><br><span class="bold">Partners?</span>: No<br>
+						</p>
+					</div>
+				<hr>
+				<h3>Software Development</h3>
+					<div id="software">
+						<h5>GenkiFLASH</h5>
+						<img id="genkiFlash" src="img/genkiflashThumb.png">
+						<p id="genkiText">
+							<span class="bold">Description</span>: A flash-card program for Japanese language learners, based on the curriculum from Eri Banno's Genki I textbook and workbook set.
+							<br><span class="bold">Status</span>: Ongoing
+							<br><span class="bold">Skills used</span>: Python (with Tkinter GUI)
+							<br><span class="bold">Partners?</span>: None
+						</p>
+					</div>
+				<hr>
+				<h3>Photography</h3>
+					<h5>Spring 2015 Gallery</h5>
+					<h5>Fall 2014 Gallery</h5>
+					<h5>Spring 2014 Gallery</h5>
+				<hr>
+				<h3>Videography</h3>
+					<h5>WCTV Segments</h5>
+					<h5>Short Films</h5>
+				<hr>
+				<h3>Digital Art</h3>
+					<div class="digArt">
+						<h5>2016 Yuki Matsuri T-Shirt Design Contest Winner</h5>
+						<p>
+							<span class="bold">Description</span>: My entry for Japan Club's 2016 Yuki Matsuri T-shirt Design contest.
+							<br><span class="bold">Status</span>: Complete
+							<br><span class="bold">Skills used</span>: Adobe Illustrator
+							<br><span class="bold">Partners?</span>: None
+						</p>
+					</div>
+					<div class="digArt">
+						<h5>Church vs State T-Shirt</h5>
+						<p>
+							<span class="bold">Description</span>: A flash-card program for Japanese language learners, based on the curriculum from Eri Banno's Genki I textbook and workbook set.
+							<br><span class="bold">Status</span>: Ongoing
+							<br><span class="bold">Skills used</span>: Python (with Tkinter GUI)
+							<br><span class="bold">Partners?</span>: None
+						</p>
+					</div>
+				<p><a href="videos.html">Videography</a></p>
 				<br><br><br><br><br><br><br><br><br><br>
 			</section>
     	</div>
@@ -53,35 +131,6 @@
     				</li>
     			</ul>
     		</footer>
-    <script type="text/javascript">
-
-    	//Toggles dropdown menu on mobile devices
-    	document.getElementById("menuLink").onclick=function() {
-    		if (document.getElementById("navMenu").style.display=="none") {
-    			document.getElementById("navMenu").style.display="block";
-    		} else {
-    		document.getElementById("navMenu").style.display="none";
-    		};
-    	};
-    	/*Hack-n-smash fix for a bug where the menu disappears for large screens
-    	if menu button is pressed on small screen and then window is resized. Code taken
-    	from http://www.sitepoint.com/javascript-media-queries/ */
-		if (matchMedia) { //Watches to see if the window size changes
- 			var mq = window.matchMedia("(min-width: 826px)");
-  			mq.addListener(WidthChange);
-  			WidthChange(mq);
-		};
-		// When the window size changes, it checks to see...
-		function WidthChange(mq) {
-			//Is it the size of the desktop/laptop styles?
-  			if (mq.matches) {
-  				//ensures the menu is displayed
-	 		    document.getElementById("navMenu").style.display="block";
-  			}
-  			else {
-  				document.getElementById("navMenu").style.display="none";
-  			};
-		};
-    </script>
+		<script src="template.js"></script>
     </body>
 </html>

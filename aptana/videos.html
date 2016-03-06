@@ -5,56 +5,66 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <link rel="stylesheet" type="text/css" href="template.css">
         <link rel="stylesheet" type="text/css" href="videos.css">
-        <title>New Web Project</title>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+        <title>Bianca-Morris.com - Videography</title>
     </head>
     <body>
     	<div class="wrapper">
     		<header>
-    			<img src="file:///C:/Users/Bianca/My%20Projects/bianca-morris.com/aptana/img/banner.png" />
+    			<img src="img/banner.png" />
     		</header>
     		<nav>
     			<ul id="dropMenu">
     				<li class="menuButton" id="menuLink">Menu</li>
     			</ul>
     			<ul id="navMenu">
-    				<li class="activeNavLink navLink" id="homeLink"><a href="#">Home</a></li>
-    				<li class="navLink" id="aboutLink"><a href="#">About</a></li>
-    				<li class="navLink" id="cvLink"><a href="#">CV</a></li>
-    				<li class="navLink" id="projectsLink"><a href="#">Projects</a></li>
-    				<li class="navLink" id="blogLink"><a href="#">Blog</a></li>
-    				<li class="navLink" id="contactLink"><a href="#">Contact</a></li>
+    				<li class="navLink" id="homeLink"><a href="index.html">Home</a></li>
+    				<li class="navLink" id="aboutLink"><a href="about.html">About</a></li>
+    				<li class="navLink" id="cvLink"><a href="cv.html">CV</a></li>
+    				<li class="navLink" id="projectsLink"><a href="projects.html">Projects</a></li>
+    				<!--<li class="navLink" id="blogLink"><a href="blog.html">Blog</a></li>-->
+    				<li class="navLink" id="contactLink"><a href="contact.html">Contact</a></li>
     			</ul>
     		</nav>
     		<section>
-				<h1>Header 1 Here!</h1>
+				<h1><a name="vid"></a>Videography</h1>
+				<p><strong>Production Note:</strong> All of the following videos were filmed using a Canon XA-10 or XA-20 
+				digital video camera. The WCTV segments are all shot in a period of 1-3 hours, with minimal sound and lighting
+				equipment.</p>
 				<div id="videoContainer">
 					<div id="videoPane">
-						<video width="360px" controls>
-  						<source src="/vids/[S4.E2]WCTV_SlackathonOrHackathon.ogg" type="video/mp4">
- 					 	Your browser does not support HTML video!</source>
+						<video id="vidTag" controls>
+							<source id="mainVid" src="vids/WCTV_S8-E1.ogv" type="video/ogv"></source>
+							<source id="backupVid" src="vids/WCTV_S8-E1.mp4" type="video/mp4"></source>
+							Sorry, your browser doesn't support embedded videos! Please use Chrome, Firefox or IE.
 						</video>
-					</div>
-					<div id="navPane">
-						<ul>
-							<li>WCTV</li>
-								<ul>
-									<li>S8.E1</li>
-									<li>S6.E5</li>
-									<li>S6.E4</li>
-									<li>S6.E2</li>
-									<li>S6.E1</li>
-									<li>S5.E3</li>
-									<li>S4.E4</li>
-									<li>S4.E2</li>
-								</ul>
-							<li>Other Projects</li>
-						</ul>
-						
-					</div>
-					<div id="descriptionBox">
-						
+						<div id="navPane">
+							<button class="dropButton" value="WCTV" onclick="toggle();">WCTV</button>
+								<div id="dropContent">
+									<a href="#vid" class="videoLink activeVideo" id="vids/WCTV_S8-E1">S8.E1: Signs Your Life is a Rom-Com</a>
+									<a href="#vid" class="videoLink" id="vids/WCTV_S6-E5">S6.E5: De-Stress with Therapy Boys</a>
+									<a href="#vid" class="videoLink" id="vids/WCTV_S6-E4">S6.E4: Cis Men Awareness PSA</a>
+									<a href="#vid" class="videoLink" id="vids/WCTV_S6-E2">S6.E2: Dave Olsen, Tortured Artist</a>
+									<a href="#vid" class="videoLink" id="vids/WCTV_S6-E1">S6.E1: Celeb Valentines</a>
+									<a href="#vid" class="videoLink" id="vids/WCTV_S5-E3">S5.E3: Something She Really Wants</a>
+									<a href="#vid" class="videoLink" id="vids/WCTV_S4-E4">S4.E4: Latina Studies</a>
+									<a href="#vid" class="videoLink" id="vids/WCTV_S4-E2">S4.E2: Maya on the Street</a>
+								</div>
+							<button class="dropButton">Other Projects</button>
+						</div>
+						<div id="descriptionBox">
+							<h2 id="videoTitle">WCTV S8 E1: Signs Your Life Is a Rom-Com</h2>
+							<h3 id="videoCreds">Filmed by Bianca Morris</h3>
+							<p id="videoDescription">Is your relationship too good to be true? Look out! You might be living in a romantic comedy... watch on for five sure signs that your life is actually a chick-flick!
+								<br/>
+								<br/>
+								View the full episode <a href="https://youtu.be/thXzrpja-Sk">here</a>.</p>
+						</div>
 					</div>
 				</div>
+				<p><strong>Viewing Note:</strong> This page performs best in Google Chrome or Firefox. Additionally, the video 
+					quality has been reduced, so as not to take up excessive server space.
+					To view the clips in high quality, click the link in the file's description. </p>
 			</section>
     	</div>
     		<footer>
@@ -79,35 +89,11 @@
     				</li>
     			</ul>
     		</footer>
+	<script type="text/javascript" src="template.js"></script>
+	<script type="text/javascript" src="videos.js"></script> <!--look into why this doesn't work in the future-->
     <script type="text/javascript">
-
-    	//Toggles dropdown menu on mobile devices
-    	document.getElementById("menuLink").onclick=function() {
-    		if (document.getElementById("navMenu").style.display=="none") {
-    			document.getElementById("navMenu").style.display="block";
-    		} else {
-    		document.getElementById("navMenu").style.display="none";
-    		};
-    	};
-    	/*Hack-n-smash fix for a bug where the menu disappears for large screens
-    	if menu button is pressed on small screen and then window is resized. Code taken
-    	from http://www.sitepoint.com/javascript-media-queries/ */
-		if (matchMedia) { //Watches to see if the window size changes
- 			var mq = window.matchMedia("(min-width: 826px)");
-  			mq.addListener(WidthChange);
-  			WidthChange(mq);
-		};
-		// When the window size changes, it checks to see...
-		function WidthChange(mq) {
-			//Is it the size of the desktop/laptop styles?
-  			if (mq.matches) {
-  				//ensures the menu is displayed
-	 		    document.getElementById("navMenu").style.display="block";
-  			}
-  			else {
-  				document.getElementById("navMenu").style.display="none";
-  			};
-		};
+	
+		//[[Ep, Title, credit, description, video]]
     </script>
     </body>
 </html>

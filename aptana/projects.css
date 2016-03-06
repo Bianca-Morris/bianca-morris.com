@@ -1,0 +1,47 @@
+h3 {
+	text-align: center;
+}
+
+.webDesign {
+	display: inline-block;
+	width: 180px;
+	text-align: center;
+	padding-bottom: 30px;
+}
+.webDesign img,
+#genkiFlash {
+	border: solid #D16785 3px;
+}
+.webDesign p{
+	line-height: 15px;
+}
+.webDesign h5{
+	text-align:center;
+}
+.bold {
+	font-weight: bold;
+}
+#genkiFlash {
+	float:left;
+	margin-right: 20px;
+}
+
+#genkiText {
+	margin-top: -8px;
+}
+
+#software {
+	padding-bottom: 30px;
+}
+
+.digArt {
+	width: 290px;
+	display: inline-block;
+	text-align: center;
+}
+
+.digArt img {
+	border: solid #E3C995 3px;
+	border-radius: 100px;
+	
+}

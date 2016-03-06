@@ -10,7 +10,7 @@
     <body>
     	<div class="wrapper">
     		<header>
-    			<img src="file:///C:/Users/Bianca/My%20Projects/bianca-morris.com/aptana/img/banner.png" />
+    			<img src="img/banner.png" />
     		</header>
     		<nav>
     			<ul id="dropMenu">
@@ -21,27 +21,37 @@
     				<li class="activeNavLink navLink" id="aboutLink"><a href="#">About</a></li>
     				<li class="navLink" id="cvLink"><a href="cv.html">CV</a></li>
     				<li class="navLink" id="projectsLink"><a href="projects.html">Projects</a></li>
-    				<li class="navLink" id="blogLink"><a href="blog.html">Blog</a></li>
+    				<!--Blog not ready
+    					<li class="navLink" id="blogLink"><a href="blog.html">Blog</a></li>-->
     				<li class="navLink" id="contactLink"><a href="contact.html">Contact</a></li>
     			</ul>
     		</nav>
     		<section>
 				<h1>About Me</h1>
 				<img src="img/pic.jpg">
-				<h3>Demographics:</h3>
-				<ul>
-					<li><strong>Name:</strong> Bianca Allyn Morris</li>
-					<li><strong>Age:</strong> 22</li>
-					<li><strong>Based In:</strong> West Palm Beach, FL</li>
-					<li><strong>Hometown:</strong> Atlanta, GA</li>
-				</ul>
-				<h3>Education:</h3>
-				<ul>
-					<li><strong>University/College:</strong> Wellesley College</li>
-					<li><strong>Major:</strong> Cinema and Media Studies</li>
-					<li><strong>Class Year:</strong> Junior</li>	
-				</ul>
-				<br>
+				<div id="fastFacts">
+					<div id="demo">
+						<h4>Demographics:</h4>
+						<p>
+							Name: Bianca Allyn Morris<br>
+							Age: 22<br>
+							Based In: West Palm, FL<br>
+							Hometown: Atlanta, GA<br>
+						</p>
+					</div>
+					<div id="ed">
+						<h4>Education:</h4>
+						<p>
+							School: Wellesley College<br>
+							Major: Cinema and Media
+							<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<!--Yes, the above is horrible form. I know this, and will get around to 
+								fixing it. -->
+							Studies<br>
+							Class Year: 2017<br>
+						</p>
+					</div>
+				</div>	
 				<h3>Brief Bio:</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
 				<h3>Fun Facts:</h3>
@@ -74,34 +84,6 @@
     				</li>
     			</ul>
     		</footer>
-    <script type="text/javascript">
-    	//Toggles dropdown menu on mobile devices
-    	document.getElementById("menuLink").onclick=function() {
-    		if (document.getElementById("navMenu").style.display=="none") {
-    			document.getElementById("navMenu").style.display="block";
-    		} else {
-    		document.getElementById("navMenu").style.display="none";
-    		};
-    	};
-    	/*Hack-n-smash fix for a bug where the menu disappears for large screens
-    	if menu button is pressed on small screen and then window is resized. Code taken
-    	from http://www.sitepoint.com/javascript-media-queries/ */
-		if (matchMedia) { //Watches to see if the window size changes
- 			var mq = window.matchMedia("(min-width: 826px)");
-  			mq.addListener(WidthChange);
-  			WidthChange(mq);
-		};
-		// When the window size changes, it checks to see...
-		function WidthChange(mq) {
-			//Is it the size of the desktop/laptop styles?
-  			if (mq.matches) {
-  				//ensures the menu is displayed
-	 		    document.getElementById("navMenu").style.display="block";
-  			}
-  			else {
-  				document.getElementById("navMenu").style.display="none";
-  			};
-		};
-    </script>
+		<script type="text/javascript" src="template.js"></script>
     </body>
 </html>
