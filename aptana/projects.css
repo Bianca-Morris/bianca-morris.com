@@ -35,8 +35,6 @@ h3 {
 }
 
 .digArt {
-	width: 290px;
-	display: inline-block;
 	text-align: center;
 }
 
@@ -44,4 +42,23 @@ h3 {
 	border: solid #E3C995 3px;
 	border-radius: 100px;
 	
+}
+
+/* Desktop/Laptop size */
+@media screen and (min-width:826px) 
+{
+	.digArt {
+		width: 290px;
+		display: inline-block;
+	}
+}
+
+
+/* Mobile & Tablet size */
+@media screen and (max-width:825px)
+{
+	.digArt {
+		width: 100%;
+		display: block;
+	}
 }
